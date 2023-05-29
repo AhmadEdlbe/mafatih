@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/lightGray"
+        android:gravity="start|center"
+        android:paddingStart="@dimen/dimen10dp"
+        android:paddingEnd="@dimen/dimen10dp"
+        android:text="@string/Show_Accounts"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/accountList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen5dp"
+        tools:context=".view.ShowAccountsActivity"
+        tools:listitem="@layout/list_user_details"/>
+  </LinearLayout>
+</layout>

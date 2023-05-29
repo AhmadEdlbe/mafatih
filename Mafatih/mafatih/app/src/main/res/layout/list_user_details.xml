@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        card_view:cardCornerRadius="@dimen/dimen10dp"
+        card_view:cardElevation="@dimen/dimen10dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:elevation="@dimen/dimen1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen18sp"
+                android:text="Name    :"
+                tools:text="Name    :" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:padding="@dimen/dimen5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen18sp"
+            android:text="@string/ahmad_edlbe"
+            tools:text="@string/ahmad_edlbe" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen18sp"
+                android:text="Address:"
+                tools:text="Address:" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/dimen5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen18sp"
+            tools:text="Address" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen5dp"
+                android:textColor="@color/black"
+                android:text="Phone   :"
+                android:textSize="@dimen/dimen18sp"
+                tools:text="phone   :" />
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/dimen5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen18sp"
+            tools:text="Phone" />
+    </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
